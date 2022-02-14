@@ -19,10 +19,21 @@ a {
   text-decoration: none;
 }
 
+.button-blue{
+  margin-left: 30px;
+  padding: 9px 15px;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #3751FF;
+  color: #fff;
+  border-radius: 30px;
+}
+
 .wrapper {
   display: grid;
   grid-gap: 20px;
   justify-content: center;
+  grid-template-columns: 1fr;
 }
 
 .main-nav {
@@ -30,8 +41,9 @@ a {
   grid-gap: 20px;
   margin: 1.5rem 0;
   grid-template-columns: 1fr 3fr 2fr;
-  width: 100%;
+  width: 77%;
   justify-content: center;
+  justify-self: center;
 }
 
 .logo {
@@ -70,19 +82,66 @@ a {
   margin-left: 70px;
 }
 
-.main-nav .contact-bar a{
-  margin-left: 30px;
-  padding: 9px 15px;
-  font-weight: 300;
-  font-size: 1rem;
-  background-color: #3751FF;
-  color: #fff;
-  border-radius: 30px;
-}
-
 .main-nav .contact-bar h3 {
   color: #283396;
   font-size: 1rem;
 }
 
+.hero {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.hero-content {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+  grid-template-areas: 
+    "heroContent-h1 heroContent-h1"
+    "heroContent-p heroContent-p"
+    "heroBuyButton heroFeature"
+    "img img";
+  grid-gap: 2rem;
+  text-align: center;
+  padding-top: 120px;
+  height: 871px;
+}
+
+.hero-content h1 {
+  grid-area: heroContent-h1;
+  width: 60%;
+  font-size: 3.438rem;
+  justify-self: center;
+  color: #1E266D;
+  line-height: 105%;
+}
+
+.hero-content p {
+  grid-area: heroContent-p;
+  font-size: 1.125rem;
+  color: #455880;
+}
+
+.hero-content .hero-buy-button {
+  grid-area: heroBuyButton;
+  width: 30%;
+  justify-self: end;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hero-content .hero-feature-a {
+  grid-area: heroFeature;
+  justify-self: start;
+  width: 30%;
+  font-size: 1rem;
+}
+
+.hero-content img {
+  width: 100%;
+  grid-area: img;
+  justify-self: center;
+}
 
