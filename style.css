@@ -371,3 +371,51 @@ a {
   right: 0;
   bottom: -33px;
 }
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 1fr;
+  background-color: #FFF9EA;
+}
+
+.portfolio-content {
+  padding-top: 120px;
+  display: grid;
+  grid-gap: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+}
+
+.portfolio-content *:nth-child(1) {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: 3rem;
+  color: #1E266D;
+}
+
+.portfolio-content *:nth-child(2) {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  font-size: 1.313rem;
+  color: #455880;
+}
+
+.portfolio-content *:nth-child(3) {
+  grid-column: 2/3;
+  width: 30%;
+  grid-row: 3/4;
+  justify-self: center;
+  margin-left: 0;
+  padding: 10px 15px;
+}
+
+.portfolio img {
+  width: 100%;
+  justify-self: center;
+}
