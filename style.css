@@ -540,3 +540,100 @@ a {
 .cta-touch h5 span {
   color: #FED385;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 92px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  justify-content: center;
+  width: 87.5%;
+  justify-self: center;
+  margin-bottom: 8rem;
+}
+
+.column-1 {
+  display: grid;
+  grid-template-rows: max-content;
+}
+
+.column-1 img{
+  width: 61px;
+  align-self: baseline;
+  height: 23px;
+  margin-bottom: 31px;
+}
+
+.column-1 p {
+  font-size: 1.125rem;
+  color: #455880;
+}
+
+.column-2, .column-3, .column-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  grid-gap: 0.8rem;
+}
+
+:where(.column-2, .column-3, .column-4) p {
+  font-size: 1.375rem;
+  color: #1E266D;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+:where(.column-2, .column-3, .column-4) a {
+  color: #455880;
+  font-size: 1.125rem;
+  align-self: center;
+}
+
+.column-4 {
+  grid-template-rows: repeat(4, 46px);
+  grid-gap: 0;
+}
+
+.column-4 span {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(5, 1fr);
+  color: #1E266D;
+  justify-content: space-between;
+}
+
+.column-4 span i, .column-4 span img {
+  margin-right: 15px;
+}
+
+.column-4 a, .column-4 span {
+  align-self: center;
+}
+
+.info {
+  display: grid;
+  width: 87.5%;
+  justify-self: center;
+  justify-content: space-between;
+  grid-template-columns: max-content max-content;
+}
+
+.info p {
+  font-size: 0.875rem;
+  color: rgba(69, 99, 239, 50%);
+}
+
+.info a {
+  color: #455880;
+  font-size: 0.875rem;
+}
+
+.info-links :nth-child(2) {
+  margin: 0 30px;
+}
