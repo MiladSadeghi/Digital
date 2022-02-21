@@ -307,7 +307,6 @@ hr {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   text-align: center;
   justify-items: center;
 }
@@ -676,6 +675,25 @@ footer {
   }
   .testimonials h1 {
     margin: 10px 0 33px 0;
+  }
+  .cta-content h1 {
+    font-size: 2.2rem;
+  }
+  .cta-touch h5 {
+    font-size: 0.8rem;
+  }
+  .button-cto {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .cta-content {
+    grid-gap: 2rem;
+    text-align: center;
+  }
+  .cta-touch {
+    justify-self: center;
   }
 }
 
