@@ -309,6 +309,7 @@ hr {
   align-items: center;
   height: 100vh;
   text-align: center;
+  justify-items: center;
 }
 
 .testimonials h1 {
@@ -319,9 +320,10 @@ hr {
 
 .testimonials-content {
   display: grid;
-  width: 1180px;
+  width: 87.5%;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
 }
 
 .comment {
@@ -337,7 +339,6 @@ hr {
 }
 
 .comment p {
-  width: 94%;
   font-size: 1.125rem;
   color: #455880;
 }
@@ -673,6 +674,9 @@ footer {
   .portfolio-content *:nth-child(2) {
     font-size: 1rem;
   }
+  .testimonials h1 {
+    margin: 10px 0 33px 0;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -682,6 +686,14 @@ footer {
   }
 
   .hero-content p {
+    font-size: 1rem;
+  }
+
+  .comment {
+    height: 368px;
+  }
+
+  .comment p {
     font-size: 1rem;
   }
 }
