@@ -15,6 +15,7 @@
 
 body {
   font-family: "Halyard Text", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -309,19 +310,21 @@ hr {
   align-items: center;
   text-align: center;
   justify-items: center;
+  margin-bottom: 50px;
 }
 
 .testimonials h1 {
   align-self: end;
   font-size: 3rem;
   color: #1E266D;
+  margin: 20px 0 50px;
 }
 
 .testimonials-content {
   display: grid;
   width: 87.5%;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   justify-content: center;
 }
 
@@ -379,7 +382,7 @@ hr {
   display: grid;
   justify-content: center;
   justify-self: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 89.3%;
 }
 
@@ -434,11 +437,12 @@ footer {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
   justify-content: center;
   width: 87.5%;
   justify-self: center;
   margin-bottom: 8rem;
+  grid-gap: 2rem;
 }
 
 .column-1 {
@@ -508,7 +512,8 @@ footer {
   width: 87.5%;
   justify-self: center;
   justify-content: space-between;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
 }
 
 .info p {
@@ -521,8 +526,10 @@ footer {
   font-size: 0.875rem;
 }
 
-.info-links :nth-child(2) {
-  margin: 0 30px;
+.info-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  align-items: center;
 }
 
 .hamburger {
@@ -610,7 +617,7 @@ footer {
   }
 
   .nav-content {
-    position: fixed;
+    position: absolute;
     right: -100%;
     top: 4rem;
     width: 100%;
@@ -695,6 +702,12 @@ footer {
   .cta-touch {
     justify-self: center;
   }
+  .column-2, .column-3, .column-4 {
+    justify-self: center;
+  }
+  .info {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -712,6 +725,15 @@ footer {
   }
 
   .comment p {
+    font-size: 1rem;
+  }
+
+  .cta-content h1 {
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+
+  .column-1 p {
     font-size: 1rem;
   }
 }
