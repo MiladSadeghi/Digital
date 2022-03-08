@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "Halyard Text";
+  src: url("http://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.eot");
+  src: url("http://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Halyard Text", sans-serif;
+}
