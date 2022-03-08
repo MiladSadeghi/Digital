@@ -16,3 +16,7 @@
 body {
   font-family: "Halyard Text", sans-serif;
 }
+
+nav h6 {
+  color: #0f1fff;
+}
