@@ -7,6 +7,10 @@
     url("http://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.ttf") format("truetype");
 }
 
+:root {
+  --blue-color: #1E266D;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +23,63 @@ body {
 
 nav h6 {
   color: #0f1fff;
+}
+
+.blue-color {
+  color: var(--blue-color);
+}
+
+header {
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+  background-size: 100% 83%;
+}
+
+header h1 {
+  font-size: 3.438rem;
+}
+
+.header-content {
+  padding-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .header-content {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  header h1 {
+    font-size: 2.7rem;
+  }
+  header {
+    background-size: 100% 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header {
+    background-size: 100% 85%;
+  }
+}
+
+@media (max-width: 475px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header {
+    background-size: 100% 87%;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3.438rem;
+  }
+  header {
+    background-size: 100% 83%;
+  }
 }
