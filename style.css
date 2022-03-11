@@ -9,6 +9,7 @@
 
 :root {
   --blue-color: #1E266D;
+  --text-color: #455880;
 }
 
 * {
@@ -48,6 +49,18 @@ header h1 {
 
 .portfolio {
   background-color: #FFF9EA;
+}
+
+.testimonials {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+}
+
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 992px) {
