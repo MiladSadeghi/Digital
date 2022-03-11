@@ -63,6 +63,16 @@ header h1 {
   align-items: center;
 }
 
+.cta {
+  background: #3751FF;
+  padding: 4.5rem 0;
+}
+
+.cta h1 {
+  width: 65%;
+}
+
+
 @media (max-width: 992px) {
   .header-content {
     padding-top: 20px;
