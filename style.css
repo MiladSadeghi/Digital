@@ -22,6 +22,10 @@ body {
   font-family: "Halyard Text", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav h6 {
   color: #0f1fff;
 }
