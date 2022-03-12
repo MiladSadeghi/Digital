@@ -18,6 +18,8 @@
 
 </p>
 
+
+
 <h4 align="center"> 
 	🚀  Digits Demo Landing Page  🚀
 </h4> 
@@ -29,6 +31,13 @@
 </p>
 
 <br>
+
+## :heavy_check_mark: Bootstrap ##
+created by bootstrap v5.1.3
+
+
+
+&#xa0;
 
 
 ## :white_check_mark: Figma Link Page ##
